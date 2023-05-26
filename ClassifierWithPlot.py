@@ -140,15 +140,6 @@ if __name__ == '__main__':
             X.append([avg, std])
             y.append(obj.obj_class)
 
-    # print(*X, sep="\n")
-    # print(y)
-
-    # array of classifier
-    # for clf_type in classifiers:
-    #     for clf in clf_type:
-    #         scores = cross_val_score(clf, X, y, cv=2)
-    #         print(f"{clf.__class__.__name__}: {scores.mean()}")
-
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=1)
     best_classifiers = []
     plotnum = 1
