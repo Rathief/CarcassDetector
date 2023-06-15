@@ -1,0 +1,7 @@
+Latar Belakang
+	Dijelaskan bahwa tugas yolo hanya detect apakah ada ayam atau tidak
+	Dijelaskan bahwa mati dan hidup akan dibedakan dari gerakannya
+
+Metode
+	Ditambahkan penjelasan setiap kolom hasil tracking mewakili apa
+	Ditambahkan bahwa penulis asumsi semua ayam yang terdeteksi hidup
