@@ -136,24 +136,6 @@ class ObjectTracking:
         print("Object Class =" + str(self.obj_class))
         print(self.obj_track)
 
-
-# neighbor_classifiers = [
-#     KNeighborsClassifier(n_neighbors=5, weights="uniform"),
-#     KNeighborsClassifier(n_neighbors=10, weights="uniform"),
-#     KNeighborsClassifier(n_neighbors=10, weights="distance")
-# ]
-#
-# tree_classifiers = [
-#     RandomForestClassifier(max_depth=None, class_weight=None),  # default
-#     RandomForestClassifier(max_depth=3, class_weight=None),
-#     RandomForestClassifier(max_depth=None, class_weight="balanced")
-# ]
-#
-# svc_classifiers = [
-#     SVC(kernel="rbf", class_weight=None),
-#     SVC(kernel="poly", class_weight=None),
-#     SVC(kernel="rbf", class_weight="balanced")
-# ]
 clf_params = [[KNeighborsClassifier(),      {'n_neighbors': [3, 5, 10, 20],
                                              'weights': ['uniform', 'distance']}],
               [RandomForestClassifier(),    {'n_estimators': [2, 5, 10],
