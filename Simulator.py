@@ -43,10 +43,6 @@ def simulate_carcass(track_dir, save_dir):
                 simulatedTrack.write(' '.join(line[0:6] + ['0', '\n']))
             simulatedTrack.close()
 
-    # print(avgPos)
-    # print(avgSize)
-    # print(' '.join(map(str, [currentFrame, 0] + simAttribute + [-1, -1, -1, 0])))
-
 
 if __name__ == '__main__':
     simulate_carcass("track", "Simulated_Track")
